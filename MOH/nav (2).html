@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures full height of viewport */
+        }
+        header {
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border-bottom: 5px solid #ff1e56;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            font-size: 85px;
+            font-weight: 700;
+            color: white;
+            text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+            margin: 0;
+            animation: popIn 1.5s ease-in-out;
+        }
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        p {
+            font-size: 28px;
+            font-weight: 500;
+            color: white;
+            margin: 15px 0;
+        }
+        nav ul {
+            padding: 10px;
+            margin: 10px auto;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            border-radius: 50px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 118, 140, 0.9);
+            width: fit-content;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        nav li {
+            display: inline;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: 700;
+            padding: 15px 30px;
+            display: inline-block;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            background: #ff1e56;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+        }
+        nav a:hover {
+            background: white;
+            color: #ff1e56;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        }
+        .navbar {
+            width: 100%;
+        }
+
+        footer {
+            background: #ff758c;
+            padding: 20px;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+            margin-top: auto; /* Push footer to the bottom */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YASMIN MOHAMMED</h1>
+        <p>DO NOT DIE BEFORE YOUR DEATH</p>
+        <nav class="navbar"> 
+            <ul>
+                <li><a href="home (2).html">Home</a></li>
+                <li><a href="about me (2).html">About Me</a></li>
+                <li><a href="contact me.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <footer>
+        <p>&copy; 2025 Yamuti. All rights reserved.</p>
+    </footer>
+</body>
+</html>
